@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "project-home-tiles-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectHomeTiles/ProjectHomeTilesWebPart.js",
+          "manifest": "./src/webparts/projectHomeTiles/ProjectHomeTilesWebPart.manifest.json"
+        }
+      ]
+    },
+    "project-banner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectBanner/ProjectBannerWebPart.js",
+          "manifest": "./src/webparts/projectBanner/ProjectBannerWebPart.manifest.json"
+        }
+      ]
+    },
+    "project-announcement-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectAnnouncement/ProjectAnnouncementWebPart.js",
+          "manifest": "./src/webparts/projectAnnouncement/ProjectAnnouncementWebPart.manifest.json"
+        }
+      ]
+    },
+    "project-quick-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectQuickLinks/ProjectQuickLinksWebPart.js",
+          "manifest": "./src/webparts/projectQuickLinks/ProjectQuickLinksWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://code.jquery.com/jquery-1.7.0.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "jplist": {
+      "path": "./jplist/1.2.0/jplist.js",
+      "globalName": "jplist"
+    },
+    "jplist-core": {
+      "path": "./src/ExternalRef/js/jplist-core.js",
+      "globalName": "jplist-core",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "jplist-pagination": {
+      "path": "./src/ExternalRef/js/jplist-pagination.js",
+      "globalName": "jplist-pagination",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "slick": {
+      "path": "./src/ExternalRef/js/slick.js",
+      "globalName": "slick",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "ProjectHomeTilesWebPartStrings": "lib/webparts/projectHomeTiles/loc/{locale}.js",
+    "ProjectBannerWebPartStrings": "lib/webparts/projectBanner/loc/{locale}.js",
+    "ProjectAnnouncementWebPartStrings": "lib/webparts/projectAnnouncement/loc/{locale}.js",
+    "ProjectQuickLinksWebPartStrings": "lib/webparts/projectQuickLinks/loc/{locale}.js"
+  }
+}

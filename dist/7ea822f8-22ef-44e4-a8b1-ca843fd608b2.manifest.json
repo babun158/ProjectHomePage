@@ -1,0 +1,65 @@
+{
+  "id": "7ea822f8-22ef-44e4-a8b1-ca843fd608b2",
+  "alias": "ProjectHomeTilesWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "ProjectHomeTiles"
+      },
+      "description": {
+        "default": "Tiles in the Project home page"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "ProjectHomeTiles"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "project-home-tiles-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "project-home-tiles-web-part": {
+        "type": "path",
+        "path": "dist/project-home-tiles-web-part.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "https://code.jquery.com/jquery-1.7.0.min.js",
+        "globalName": "jQuery"
+      },
+      "ProjectHomeTilesWebPartStrings": {
+        "defaultPath": "lib/webparts/projectHomeTiles/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      }
+    }
+  }
+}

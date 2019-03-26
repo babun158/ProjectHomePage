@@ -1,0 +1,65 @@
+{
+  "id": "46ab2f54-a06c-40ae-9bf3-6b08ecaf96dd",
+  "alias": "ProjectAnnouncementWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "ProjectAnnouncement"
+      },
+      "description": {
+        "default": "Announcement component in the Project Home Page"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "ProjectAnnouncement"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "project-announcement-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "project-announcement-web-part": {
+        "type": "path",
+        "path": "dist/project-announcement-web-part.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "https://code.jquery.com/jquery-1.7.0.min.js",
+        "globalName": "jQuery"
+      },
+      "ProjectAnnouncementWebPartStrings": {
+        "defaultPath": "lib/webparts/projectAnnouncement/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      }
+    }
+  }
+}
